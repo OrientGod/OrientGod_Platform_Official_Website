@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrentGod平台-隐私政策与用户协议（含免责声明）   第3.2条</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            color-scheme: light only;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff !important;
+            overflow: hidden;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #ffffff !important;
+            }
+        }
+        
+        .error-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex: 1;
+        }
+        
+        .error-image {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        .footer {
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 14px;
+            color: #666666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <img src="OG_Pt_Yhyszchmzsm-3.2.png" alt="404 Error" class="error-image">
+    </div>
+    
+    <p class="footer">© 2026 OrientGod Platform. All Rights Reserved.</p>
+
+    <script>
+        (function(){
+            let d = !1;
+            const t = 160;
+            
+            function f() {
+                const w = window.outerWidth - window.innerWidth;
+                const h = window.outerHeight - window.innerHeight;
+                if (w > t || h > t) {
+                    window.location.href = 'ERROR-H5.html';
+                }
+            }
+            
+            setInterval(f, 100);
+            
+            document.addEventListener('keydown', e => {
+                if (e.key === 'F12' || 
+                    (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) || 
+                    (e.ctrlKey && e.key === 'U')) {
+                    e.preventDefault();
+                    window.location.href = 'ERROR-H5.html';
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
